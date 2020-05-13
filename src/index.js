@@ -59,14 +59,15 @@ io.on('connection', socket => {
 		})
 	})
 	
-	socket.on('disconnect', () => {
+	socket.on('disconnect', (username) => {
 		if (addedUser) {
-			--onlineUsers
-			
+			username = socket.username
+			--onlineUsers					
 			socket.broadcast.emit('userLeft', {
 				username: socket.username,
 				onlineUsers
 			})
+			console.log(`User ${username} left`)
 		}
 	})
 })
