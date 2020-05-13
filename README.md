@@ -10,7 +10,7 @@ Exemplo de Chat em Node.js usando WebSockets
 
 ## clone o repositório 
 
-`git clone https://github.com/4lexRossi/node-websocket`
+`git clone https://github.com/4lexRossi/chat-node-websocket`
 
 ## Instalar dependências
 ```
