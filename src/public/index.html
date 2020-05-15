@@ -1,33 +1,47 @@
 <!doctype html>
-<html lang="pt_BR">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Chat</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<ul class="pages">
-		<li class="chat page">
-			<div class="chatArea">
-				<ul class="messages"></ul>
-			</div>
-			<input class="inputMessage" placeholder="Escreva sua mensagem..."/>
-		</li>
-		<li class="login page">
-			<div class="form">
-				<h3 class="title">Qual é o seu nickname?</h3>
-				<input class="usernameInput" type="text" maxlength="15" />
-			</div>
-		</li>
-	</ul>
-	
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
-		integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I="
-		crossorigin="anonymous"
-	>
-	</script>
-	<script src="/app.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página de Login">    
+    <title>Signin</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+<link href="./bootstrap-4.5.0-examples/assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="login.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <form class="form-signin">
+  <img class="mb-4" src="./images/logoLexLabs.png" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">sign in</h1>
+  <label for="inputEmail" class="sr-only">Email</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <a href='./chat.html'
+    button class="btn btn-lg btn-primary btn-block">Sign in</button></a>
+  <p class="mt-5 mb-3 text-muted">&copy; LexLabs-2020</p>  
+</form>
+
 </body>
 </html>

@@ -2,6 +2,9 @@ import path from 'path'
 import http from 'http'
 import Express from 'express'
 import socketio from 'socket.io'
+import bodyParser from 'body-parser'
+import database from './config/database'
+import userRoute from './config/routes/userRoute'
 
 const app = Express()
 const server = http.createServer(app)
@@ -9,6 +12,15 @@ const io = socketio(server)
 const port = process.env.PORT || 3000
 
 app.use(Express.static(path.join(__dirname, 'public')))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.set('json spaces', 2);
+
+app.get('/', (req, res) => res.send('Olá mundo pelo Express!'))
+
+//database.connect().then(() => {
+//	app.listen(port)
+//  })
+
 
 server.listen(port, () => {
 	console.log('Server listening at port %d', port)
@@ -71,3 +83,4 @@ io.on('connection', socket => {
 		}
 	})
 })
+
