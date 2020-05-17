@@ -16,6 +16,13 @@ Exemplo de Chat em Node.js usando WebSockets
 ```
     npm install
 ```
+## Criar container para o banco MongoDB com Docker
+Execute o arquivo para gerar o container:
+
+```
+./runDocker.sh
+```
+*Obs.: O Docker precisa estar instalado. Instruções de como instalar o Docker em Windows, Mac e Linux, veja [este post](https://blog.umbler.com/br/containers-102-primeiros-passos-para-realizar-a-instalacao/?a=7e8480pk).*
 
 ## Para iniciar o servidor, use o comando:
 
@@ -26,8 +33,21 @@ Exemplo de Chat em Node.js usando WebSockets
 ```
    Digite um apelido, vai logar automaticamente e já pode mandar mensagens em tempo real \o/
 ```
+### Imagens
+
+![](https://imgur.com/s24GMHd.jpg)
+
+> Tela de Cadastro
+![](https://imgur.com/FMBUul3.jpg)
+
+> Escolha o Nickname
+![](https://imgur.com/a6TEkAz.jpg)
+
+> converse em tempo real
 
 ## Referências
 [Documentação do Socket.IO](https://socket.io)
+
+[Documentação do Mongoose](https://mongoosejs.com)
 
 [Canal Youtube Sou Dev](https://www.youtube.com/channel/UCFxvsawe-DYiVnbyozJkH5w)

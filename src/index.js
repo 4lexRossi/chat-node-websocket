@@ -21,7 +21,9 @@ app.get('/', (req, res) => res.send('Olá mundo pelo Express!'))
 //	app.listen(port)
 //  })
 
-
+function userCorrect(){
+	window.open("http://localhost:3000/chat.html/")
+}
 server.listen(port, () => {
 	console.log('Server listening at port %d', port)
 })

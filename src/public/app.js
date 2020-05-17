@@ -6,7 +6,9 @@
 		'#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
 		'#3b88eb', '#3824aa', '#a700ff', '#d300e7'
 	]
-	
+	function userCorrect(){
+		window.open("http://localhost:3000/chat.html/")
+	}
 	const usernameInput = document.getElementsByClassName('usernameInput')[0]
 	const messagesContainer = document.getElementsByClassName('messages')[0]
 	const inputMessage = document.getElementsByClassName('inputMessage')[0]
