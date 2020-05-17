@@ -36,16 +36,20 @@ Execute o arquivo para gerar o container:
 ### Imagens
 
 > Tela de Cadastro
+
 ![](https://imgur.com/s24GMHd.jpg)
 
 
+
 > Escolha o Nickname
+
 ![](https://imgur.com/FMBUul3.jpg)
 
 
-> converse em tempo real
-![](https://imgur.com/a6TEkAz.jpg)
 
+> converse em tempo real
+
+![](https://imgur.com/a6TEkAz.jpg)
 
 ## Referências
 [Documentação do Socket.IO](https://socket.io)
